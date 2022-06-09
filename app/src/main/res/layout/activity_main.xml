@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="WELCOME"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="100dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/HomePage"
+        android:layout_width="225dp"
+        android:layout_height="330dp"
+        app:srcCompat="@drawable/dual_sim_home"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        />
+
+
+    <TextView
+        android:id="@+id/GO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HomePage"
+        android:layout_marginTop="20dp"
+        android:text="Click To Open"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:background="#6ac537"
+        android:padding="8dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        />
+
+
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+    </com.google.android.gms.ads.AdView>
+
+
+
+</RelativeLayout>

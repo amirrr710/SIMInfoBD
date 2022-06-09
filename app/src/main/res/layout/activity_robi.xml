@@ -1,0 +1,824 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Robi"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="15dp"
+                ads:adSize="BANNER"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+            </com.google.android.gms.ads.AdView>
+
+
+
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/robi_sim"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SIM NUMBER"
+                android:textColor="#000"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="#e20613"
+                android:padding="5dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/s_number_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*2#"
+                        android:textSize="22dp"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/s_number_r_copy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_baseline_content_copy_24"
+                        android:textColor="#000"
+                        android:textSize="22dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/s_number_r_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_baseline_call_24"
+                        android:textColor="#000"
+                        android:textSize="22dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BALANCE CHECK"
+                android:textColor="#000"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="#e20613"
+                android:padding="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/b_check_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*222#"
+                        android:textSize="22dp"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/b_check_r_copy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_baseline_content_copy_24"
+                        android:textColor="#000"
+                        android:textSize="22dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/b_check_r_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_baseline_call_24"
+                        android:textColor="#000"
+                        android:textSize="22dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EMERGENCY BALANCE"
+                android:textColor="#000"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="#e20613"
+                android:padding="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/e_balance_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*8#"
+                        android:textSize="22dp"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/e_balance_r_copy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_baseline_content_copy_24"
+                        android:textColor="#000"
+                        android:textSize="22dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/e_balance_r_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_baseline_call_24"
+                        android:textColor="#000"
+                        android:textSize="22dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DATA (MB) CHECK"
+                android:textColor="#000"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="#e20613"
+                android:padding="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/d_check_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*3#"
+                        android:textSize="22dp"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/d_check_r_copy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_baseline_content_copy_24"
+                        android:textColor="#000"
+                        android:textSize="22dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/d_check_r_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_baseline_call_24"
+                        android:textColor="#000"
+                        android:textSize="22dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MINUTE CHECK"
+                android:textColor="#000"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="#e20613"
+                android:padding="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/m_check_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*222*2#"
+                        android:textSize="22dp"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/m_check_r_copy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_baseline_content_copy_24"
+                        android:textColor="#000"
+                        android:textSize="22dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/m_check_r_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_baseline_call_24"
+                        android:textColor="#000"
+                        android:textSize="22dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SMS CHECK"
+                android:textColor="#000"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="#e20613"
+                android:padding="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/s_check_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*222*10#"
+                        android:textSize="22dp"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/s_check_r_copy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_baseline_content_copy_24"
+                        android:textColor="#000"
+                        android:textSize="22dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/s_check_r_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_baseline_call_24"
+                        android:textColor="#000"
+                        android:textSize="22dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CUSTOMER CARE NUMBER"
+                android:textColor="#000"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="#e20613"
+                android:padding="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cc_number_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="123"
+                        android:textSize="22dp"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cc_number_r_copy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_baseline_content_copy_24"
+                        android:textColor="#000"
+                        android:textSize="22dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/cc_number_r_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_baseline_call_24"
+                        android:textColor="#000"
+                        android:textSize="22dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LATEST INTERNET OFFER"
+                android:textColor="#000"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:background="#e20613"
+                android:padding="5dp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/li_offer_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*123#"
+                        android:textSize="22dp"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/li_offer_r_copy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_baseline_content_copy_24"
+                        android:textColor="#000"
+                        android:textSize="22dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/li_offer_r_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_baseline_call_24"
+                        android:textColor="#000"
+                        android:textSize="22dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PROMOTIONAL SMS OFF"
+            android:textColor="#000"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="#e20613"
+            android:padding="5dp"
+            />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/p_sms_off_r"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="*7#"
+                        android:textSize="22dp"
+                        android:textColor="#000"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/p_sms_off_r_copy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_baseline_content_copy_24"
+                        android:textColor="#000"
+                        android:textSize="22dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/p_sms_off_r_call"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_baseline_call_24"
+                        android:textColor="#000"
+                        android:textSize="22dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="15dp"
+                        />
+
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

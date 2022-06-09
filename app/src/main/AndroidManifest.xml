@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.prudentwebandapp.siminfobd">
+
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/dual_sim"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SIMInfoBD">
+        <activity
+            android:name="com.prudentwebandapp.siminfobd.TeleTok"
+            android:exported="false" />
+        <activity
+            android:name="com.prudentwebandapp.siminfobd.Banglalink"
+            android:exported="false" />
+        <activity
+            android:name="com.prudentwebandapp.siminfobd.Robi"
+            android:exported="false" />
+        <activity
+            android:name="com.prudentwebandapp.siminfobd.Airtel"
+            android:exported="false" />
+        <activity
+            android:name="com.prudentwebandapp.siminfobd.GrameenPhone"
+            android:exported="false" />
+        <activity
+            android:name="com.prudentwebandapp.siminfobd.AllAboutSim"
+            android:exported="false" />
+        <activity
+            android:name="com.prudentwebandapp.siminfobd.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
+
+
+
+
+    </application>
+
+
+
+</manifest>
+
+

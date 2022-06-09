@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AllAboutSim"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            >
+
+            <ImageView
+                android:id="@+id/grameenphone"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                app:srcCompat="@drawable/grameenphone"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                />
+
+            <ImageView
+                android:id="@+id/airtel"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                android:layout_gravity="center"
+                android:layout_margin="11dp"
+                app:srcCompat="@drawable/airtel" />
+
+            <ImageView
+                android:id="@+id/robi"
+                android:layout_width="100dp"
+                android:layout_height="110dp"
+                app:srcCompat="@drawable/robi_sim"
+                android:layout_gravity="center"
+                android:layout_margin="11dp"
+                />
+
+            <ImageView
+                android:id="@+id/banglalink"
+                android:layout_width="100dp"
+                android:layout_height="130dp"
+                app:srcCompat="@drawable/banglalink"
+                android:layout_gravity="center"
+                android:layout_margin="11dp"
+                android:scaleType="centerCrop"
+                />
+
+            <ImageView
+                android:id="@+id/teletok"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                app:srcCompat="@drawable/teletok"
+                android:layout_gravity="center"
+                android:layout_margin="12dp"
+                />
+
+
+
+            <com.google.android.gms.ads.AdView
+                xmlns:ads="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                ads:adSize="BANNER"
+                android:layout_marginRight="25dp"
+                android:layout_marginLeft="25dp"
+                ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+            </com.google.android.gms.ads.AdView>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

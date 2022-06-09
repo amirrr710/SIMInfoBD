@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SIM Info BD</string>
+
+    <string name="device_ID">4385DA5C54A56F921FEF2CAA0D0C12B1</string>
+
+    <string name="admob_APP_ID">ca-app-pub-1352599312789988~2361433631</string>
+    
+    <string name="admob_INTERSTIAL_UNIT_ID">ca-app-pub-1352599312789988/1595146875</string>
+    
+    <string name="admob_BANNER_UNIT_ID">ca-app-pub-1352599312789988/3099800231</string>
+
+
+</resources>
